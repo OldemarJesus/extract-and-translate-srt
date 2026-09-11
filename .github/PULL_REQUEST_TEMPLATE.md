@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2026 Oldemar Jesus Gonçalves <oldemar@techboystore.uk>
+
+SPDX-License-Identifier: MIT
+-->
+
 ## Description
 
 Please include a summary of the change, issue it addresses, and motivation/context.

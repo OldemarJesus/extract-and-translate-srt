@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2026 Oldemar Jesus Gonçalves <oldemar@techboystore.uk>
+
+SPDX-License-Identifier: MIT
+-->
+
 # Contributing to MKV Subtitle Extractor & Gemini Subtitle Translator
 
 Thank you for your interest in contributing! We welcome contributions from everyone.

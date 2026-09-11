@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2026 Oldemar Jesus Gonçalves <oldemar@techboystore.uk>
+
+SPDX-License-Identifier: MIT
+-->
+
 # AGENT.md - Developer & Agent Guide for `extract-and-translate-srt`
 
 This document provides a concise architectural overview, guidelines, and commands for AI agents and developers working with or extending this codebase.

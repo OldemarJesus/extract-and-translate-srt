@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2026 Oldemar Jesus Gonçalves <oldemar@techboystore.uk>
+
+SPDX-License-Identifier: MIT
+-->
+
 # MKV Subtitle Extractor & Gemini Subtitle Translator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
