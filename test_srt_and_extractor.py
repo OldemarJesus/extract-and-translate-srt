@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Oldemar Jesus Gonçalves <oldemego@gmail.com>
+# SPDX-License-Identifier: MIT
+
 """Automated unit tests for SRT utilities and extraction logic."""
 
 from __future__ import annotations

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-FileCopyrightText: 2026 Oldemar Jesus Gonçalves <oldemego@gmail.com>
+# SPDX-License-Identifier: MIT
 """MKV Subtitle Extractor & Gemini Subtitle Translator CLI.
 
 This command-line tool allows you to:

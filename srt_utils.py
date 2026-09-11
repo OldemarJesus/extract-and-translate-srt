@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Oldemar Jesus Gonçalves <oldemego@gmail.com>
+# SPDX-License-Identifier: MIT
+
 """SRT subtitle parser, validator, and serializer utilities.
 
 This module provides helper data structures and functions to parse SRT files,

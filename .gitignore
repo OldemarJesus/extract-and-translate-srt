@@ -1,8 +1,42 @@
+# Environments and Virtualenvs
 .venv/
+venv/
+env/
+ENV/
+
+# Python Cache & Bytecode
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Environment Variables & Secrets
 .env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Application Logs & Temporary files
 *.log
 scratch/
+tmp/
+*.tmp
+
+# Media & Subtitle output data
 data/
 
+# OS and Editor specific files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

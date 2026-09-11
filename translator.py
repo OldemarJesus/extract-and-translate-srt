@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Oldemar Jesus Gonçalves <oldemego@gmail.com>
+# SPDX-License-Identifier: MIT
+
 """Gemini Subtitle Translator.
 
 This module provides translation capabilities for SRT subtitle files using either:

@@ -1,5 +1,12 @@
 # MKV Subtitle Extractor & Gemini Subtitle Translator
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![CI](https://github.com/oldemego/extract-and-translate-srt/actions/workflows/ci.yml/badge.svg)](https://github.com/oldemego/extract-and-translate-srt/actions)
+[![REUSE status](https://api.reuse.software/badge/github.com/oldemego/extract-and-translate-srt)](https://api.reuse.software/info/github.com/oldemego/extract-and-translate-srt)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
+[![Created with](https://img.shields.io/badge/Created%20with-Gemini%203.7%20Flash-4285F4.svg?logo=google&logoColor=white)](https://deepmind.google/technologies/gemini/)
+
 A fast, Python-based CLI tool and library to:
 1. **Extract subtitle tracks from MKV** video files directly into standard `.srt` format using `ffmpeg`/`ffprobe` (automatically assuming English unless specified).
 2. **Translate SRT subtitles using Google Gemini** (`gemini-2.5-flash` or customizable models), preserving exact timestamps, subtitle sequence IDs, and formatting tags (e.g. `<i>...</i>`).
@@ -18,9 +25,10 @@ A fast, Python-based CLI tool and library to:
 
 ## 📦 Installation & Setup
 
-1. Navigate to the project directory:
+1. Clone repository and navigate to the project directory:
    ```bash
-   cd /home/oldemar/Projects/extract-and-translate-srt
+   git clone https://github.com/oldemego/extract-and-translate-srt.git
+   cd extract-and-translate-srt
    ```
 
 2. Create and activate the Python virtual environment:
@@ -41,10 +49,6 @@ A fast, Python-based CLI tool and library to:
    *(By default, if no API key is specified, it seamlessly uses your active Antigravity session).*
 
 ---
-
-## 🚀 Usage Guide
-
-You can run the tool via `.venv/bin/python3 main.py` or by activating the virtual environment first (`source .venv/bin/activate`).
 
 ## 📁 Data Directory Structure
 
@@ -84,7 +88,7 @@ Extracts subtitle tracks from MKV video file(s) into standard `.srt`. **Assumes 
 
 - **Batch extract an entire TV show folder (e.g., local or SMB / NAS mount):**
   ```bash
-  python main.py extract "/run/user/1000/gvfs/smb-share:server=nas.techboystore.uk,share=docker/containers/jellyfin/media/tvshows/Show Name/Season 01/"
+  python main.py extract "/path/to/tvshows/Show Name/Season 01/"
   ```
   *Extracts all MKV episodes into `data/intermediate/<Episode_Name>.srt`.*
 
@@ -106,13 +110,13 @@ Translates `.srt` subtitle files using Gemini and saves the result to `data/fina
 
 - **Translate a single SRT:**
   ```bash
-  python main.py translate "data/intermediate/S01E01.srt" --target-lang "English"
+  python main.py translate "data/intermediate/S01E01.srt" --target-lang "Portuguese (Brazil)"
   ```
-  *Output:* `data/final/S01E01-english.srt`
+  *Output:* `data/final/S01E01.pt-BR.srt`
 
 - **Batch translate all extracted subtitles in `data/intermediate/`:**
   ```bash
-  python main.py translate "data/intermediate/" --target-lang "English"
+  python main.py translate "data/intermediate/" --target-lang "Portuguese (Brazil)"
   ```
 
 ---
@@ -122,7 +126,7 @@ Translates `.srt` subtitle files using Gemini and saves the result to `data/fina
 Scans all MKV files in a folder, extracts them to `data/intermediate/<name>.srt`, and translates them into `data/final/<name>-<lang>.srt`:
 
 ```bash
-python main.py process "/run/user/1000/gvfs/smb-share:server=nas.techboystore.uk,share=docker/containers/jellyfin/media/tvshows/The Most Heretical Last Boss Queen - From Villainess to Savior/The Most Heretical Last Boss Queen - From Villainess to Savior - S01E -/" --target-lang "English"
+python main.py process "/path/to/tvshows/Season 01/" --target-lang "Portuguese (Brazil)"
 ```
 
 **Resume / Skip Existing:**
@@ -151,7 +155,7 @@ print(f"Extracted: {srt_path}")
 translator = GeminiSubtitleTranslator()
 translated_srt = translator.translate_srt(
     input_srt_path=srt_path,
-    target_language="English"
+    target_language="Portuguese (Brazil)"
 )
 print(f"Translated: {translated_srt}")
 ```
@@ -162,24 +166,61 @@ print(f"Translated: {translated_srt}")
 
 ```
 extract-and-translate-srt/
-├── .venv/                      # Python Virtual Environment
+├── .github/
+│   ├── ISSUE_TEMPLATE/         # GitHub issue templates (Bug report, feature request)
+│   ├── PULL_REQUEST_TEMPLATE.md# Pull request template with checklist
+│   └── workflows/ci.yml        # GitHub Actions CI workflow
+├── LICENSES/
+│   └── MIT.txt                 # REUSE / SPDX License specification
 ├── .env.example                # Configuration template for Gemini API key
 ├── .gitignore                  # Git ignore rules
+├── CITATION.cff                # Citation metadata format
+├── CODE_OF_CONDUCT.md          # Contributor Covenant v2.1
+├── CONTRIBUTING.md             # Contribution guidelines & Developer Certificate of Origin
+├── LICENSE                     # MIT License
+├── README.md                   # Documentation and usage guide
+├── SECURITY.md                 # Vulnerability disclosure and security policy
 ├── requirements.txt            # Python dependencies
 ├── srt_utils.py                # SRT parsing, timing validation, chunking, serialization
 ├── extractor.py                # ffprobe stream inspection & ffmpeg SRT extraction
 ├── translator.py               # Gemini batch translation engine with schema validation
 ├── main.py                     # Rich CLI interface (info, extract, translate, process)
-├── test_srt_and_extractor.py   # Automated unit tests
-└── README.md                   # Documentation and usage guide
+└── test_srt_and_extractor.py   # Automated unit tests
 ```
 
 ---
 
 ## 🧪 Running Tests
 
-To verify that the SRT parser and extractor track logic are working correctly:
+To run the automated unit test suite:
 
 ```bash
-.venv/bin/python3 -m unittest test_srt_and_extractor.py
+python3 -m unittest test_srt_and_extractor.py
 ```
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+Please check our [Contributing Guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) before submitting pull requests.
+
+---
+
+## 🛡️ Security
+
+If you discover a potential security issue, please consult our [Security Policy](SECURITY.md) for reporting procedures.
+
+---
+
+## 🤖 Acknowledgments & Creation
+
+This project was entirely created with **[Gemini 3.7 Flash](https://deepmind.google/technologies/gemini/)** and carefully reviewed, validated, and tested by **Oldemar Jesus Gonçalves**.
+
+---
+
+## 📄 License & Citation
+
+Distributed under the **MIT License**. See [`LICENSE`](LICENSE) or [`LICENSES/MIT.txt`](LICENSES/MIT.txt) for more information.
+
+If you use this project in research or software, you can cite it using the metadata in [`CITATION.cff`](CITATION.cff).
