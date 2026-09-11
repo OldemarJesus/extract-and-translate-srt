@@ -3,13 +3,13 @@ message: "If you use this software, please cite it as below."
 authors:
   - family-names: "Gonçalves"
     given-names: "Oldemar Jesus"
-    email: "oldemego@gmail.com"
+    email: "oldemar@techboystore.uk"
 title: "MKV Subtitle Extractor & Gemini Subtitle Translator"
 abstract: "A fast CLI tool and Python library to extract subtitle tracks from MKV video files and translate them using Google Gemini API while strictly preserving timing and formatting tags. Entirely created with Gemini 3.7 Flash and reviewed and tested by Oldemar Jesus Gonçalves."
 version: 1.0.0
 date-released: 2026-09-11
 license: MIT
-repository-code: "https://github.com/oldemego/extract-and-translate-srt"
+repository-code: "https://github.com/OldemarJesus/extract-and-translate-sr"
 keywords:
   - "subtitles"
   - "srt"

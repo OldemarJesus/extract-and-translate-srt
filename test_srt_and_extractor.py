@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2026 Oldemar Jesus Gonçalves <oldemego@gmail.com>
+# SPDX-FileCopyrightText: 2026 Oldemar Jesus Gonçalves <oldemar@techboystore.uk>
 # SPDX-License-Identifier: MIT
 
 """Automated unit tests for SRT utilities and extraction logic."""

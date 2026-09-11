@@ -2,8 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![CI](https://github.com/oldemego/extract-and-translate-srt/actions/workflows/ci.yml/badge.svg)](https://github.com/oldemego/extract-and-translate-srt/actions)
-[![REUSE status](https://api.reuse.software/badge/github.com/oldemego/extract-and-translate-srt)](https://api.reuse.software/info/github.com/oldemego/extract-and-translate-srt)
+[![CI](https://github.com/OldemarJesus/extract-and-translate-sr/actions/workflows/ci.yml/badge.svg)](https://github.com/OldemarJesus/extract-and-translate-sr/actions)
+[![REUSE status](https://api.reuse.software/badge/github.com/OldemarJesus/extract-and-translate-sr)](https://api.reuse.software/info/github.com/OldemarJesus/extract-and-translate-sr)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 [![Created with](https://img.shields.io/badge/Created%20with-Gemini%203.7%20Flash-4285F4.svg?logo=google&logoColor=white)](https://deepmind.google/technologies/gemini/)
 
@@ -11,6 +11,8 @@ A fast, Python-based CLI tool and library to:
 1. **Extract subtitle tracks from MKV** video files directly into standard `.srt` format using `ffmpeg`/`ffprobe` (automatically assuming English unless specified).
 2. **Translate SRT subtitles using Google Gemini** (`gemini-2.5-flash` or customizable models), preserving exact timestamps, subtitle sequence IDs, and formatting tags (e.g. `<i>...</i>`).
 3. **Run end-to-end pipelines** on single videos or entire directories.
+
+*An open-source tool developed as part of the [techboystore ecosystem](https://home.techboystore.uk/).*
 
 ---
 
@@ -27,8 +29,8 @@ A fast, Python-based CLI tool and library to:
 
 1. Clone repository and navigate to the project directory:
    ```bash
-   git clone https://github.com/oldemego/extract-and-translate-srt.git
-   cd extract-and-translate-srt
+   git clone https://github.com/OldemarJesus/extract-and-translate-sr.git
+   cd extract-and-translate-sr
    ```
 
 2. Create and activate the Python virtual environment:
@@ -215,7 +217,7 @@ If you discover a potential security issue, please consult our [Security Policy]
 
 ## 🤖 Acknowledgments & Creation
 
-This project was entirely created with **[Gemini 3.7 Flash](https://deepmind.google/technologies/gemini/)** and carefully reviewed, validated, and tested by **Oldemar Jesus Gonçalves**.
+This project was entirely created with **[Gemini 3.7 Flash](https://deepmind.google/technologies/gemini/)** and carefully reviewed, validated, and tested by **Oldemar Jesus Gonçalves** as an extension of the **[techboystore ecosystem](https://home.techboystore.uk/)**.
 
 ---
 

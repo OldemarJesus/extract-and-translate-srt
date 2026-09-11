@@ -13,7 +13,7 @@ We actively support and provide security updates for the following versions:
 We take the security of this project seriously. If you discover a security vulnerability, please report it responsibly:
 
 1. **Do not disclose the issue publicly** (e.g., in public GitHub issues, discussions, or social media).
-2. Report vulnerabilities by sending an email to **[oldemego@gmail.com](mailto:oldemego@gmail.com)** with the subject line `[SECURITY] Subtitle Translator Vulnerability Report`.
+2. Report vulnerabilities by sending an email to **[oldemar@techboystore.uk](mailto:oldemar@techboystore.uk)** with the subject line `[SECURITY] Subtitle Translator Vulnerability Report`.
 3. If possible, use GitHub's private vulnerability reporting feature on this repository.
 
 ### What to Include in Your Report
