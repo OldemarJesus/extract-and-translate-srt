@@ -2,8 +2,8 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![CI](https://github.com/OldemarJesus/extract-and-translate-sr/actions/workflows/ci.yml/badge.svg)](https://github.com/OldemarJesus/extract-and-translate-sr/actions)
-[![REUSE status](https://api.reuse.software/badge/github.com/OldemarJesus/extract-and-translate-sr)](https://api.reuse.software/info/github.com/OldemarJesus/extract-and-translate-sr)
+[![CI](https://github.com/OldemarJesus/extract-and-translate-srt/actions/workflows/ci.yml/badge.svg)](https://github.com/OldemarJesus/extract-and-translate-srt/actions)
+[![REUSE status](https://api.reuse.software/badge/github.com/OldemarJesus/extract-and-translate-srt)](https://api.reuse.software/info/github.com/OldemarJesus/extract-and-translate-srt)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 [![Created with](https://img.shields.io/badge/Created%20with-Gemini%203.7%20Flash-4285F4.svg?logo=google&logoColor=white)](https://deepmind.google/technologies/gemini/)
 
@@ -29,7 +29,7 @@ A fast, Python-based CLI tool and library to:
 
 1. Clone repository and navigate to the project directory:
    ```bash
-   git clone https://github.com/OldemarJesus/extract-and-translate-sr.git
+   git clone https://github.com/OldemarJesus/extract-and-translate-srt.git
    cd extract-and-translate-sr
    ```
 

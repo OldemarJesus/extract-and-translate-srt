@@ -9,7 +9,7 @@ abstract: "A fast CLI tool and Python library to extract subtitle tracks from MK
 version: 1.0.0
 date-released: 2026-09-11
 license: MIT
-repository-code: "https://github.com/OldemarJesus/extract-and-translate-sr"
+repository-code: "https://github.com/OldemarJesus/extract-and-translate-srt"
 keywords:
   - "subtitles"
   - "srt"
