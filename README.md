@@ -30,7 +30,7 @@ A fast, Python-based CLI tool and library to:
 1. Clone repository and navigate to the project directory:
    ```bash
    git clone https://github.com/OldemarJesus/extract-and-translate-srt.git
-   cd extract-and-translate-sr
+   cd extract-and-translate-srt
    ```
 
 2. Create and activate the Python virtual environment:
